@@ -1,0 +1,62 @@
+/* RESPONSIVE TABLE - MOBILE LOOK LIKE APP */
+@media (max-width: 768px) {
+
+    /* Sembunyikan header tabel */
+    .responsive-table thead {
+        display: none;
+    }
+
+    /* Ubah baris jadi kartu */
+    .responsive-table tbody tr {
+        display: block;
+        background: #ffffff;
+        margin-bottom: 18px;
+        border-radius: 16px;
+        padding: 15px 14px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        border: none;
+    }
+
+    /* Ubah tiap kolom jadi baris fleksibel */
+    .responsive-table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        font-size: 14px;
+        border: none;
+        border-bottom: 1px solid #f1f3f5;
+    }
+
+    /* Hapus garis bawah terakhir */
+    .responsive-table td:last-child {
+        border-bottom: none;
+    }
+
+    /* Label kiri */
+    .responsive-table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #6c757d;
+        font-size: 13px;
+    }
+
+    /* Nilai kanan */
+    .responsive-table td {
+        color: #212529;
+        gap: 10px;
+    }
+
+    /* Gambar QR lebih rapi */
+    .responsive-table img {
+        max-width: 85px;
+        border-radius: 10px;
+    }
+
+    /* Tombol biar enak di tap */
+    .responsive-table .btn {
+        padding: 6px 12px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+}
